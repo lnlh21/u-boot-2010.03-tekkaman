@@ -445,11 +445,11 @@ clbss_l:str	r2, [r0]		/* clear loop...                    */
 /* R/W, Pull-up disable register */
 	mov	r1, #GPIO_CTL_BASE
 	add	r1, r1, #oGPIO_B
-	ldr	r2, =0x295551
+	ldr	r2, =0x295550
 	str	r2, [r1, #oGPIO_CON]
 	mov	r2, #0xff
 	str	r2, [r1, #oGPIO_UP]
-	ldr	r2, =0x1c1
+	ldr	r2, =0x1c0
 	str	r2, [r1, #oGPIO_DAT]
 #endif
 
